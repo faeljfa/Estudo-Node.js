@@ -1,4 +1,5 @@
 const os = require('os');
+const log = require('./logger')
 
 setInterval(() => {
 
@@ -11,10 +12,12 @@ setInterval(() => {
     const stats = {
         free: `${mem} MB`,
         total: `${total} MB`,
-        usage: `${percents} %`
+        usage: `${percents}%`
     }
 
     console.clear();
     console.log("===PC Stats===")
     console.table(stats)
+
+    log(`${JSON.stringify(stats)}\n`)
 }, 1000)
