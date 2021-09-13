@@ -48,8 +48,8 @@ form.addEventListener("submit", (event) => {
     if (!url) 
         return alert('formate o texto da maneira correta')
 
-    if (!/^http/.test(url)) 
-        return alert("Digite a url da maneira correta")
+    //if (!/^http/.test(url)) 
+    //    return alert("Digite a url da maneira correta")
 
     addElement({ name, url })
 

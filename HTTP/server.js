@@ -22,16 +22,3 @@ http.createServer((req, res) => {
             }
         )
 }).listen(5000, () => console.log('Server is running'))
-
-
-  /*    if(req.url === '/'){
-        fs.readFile(
-            path.join(__dirname, 'public', 'index.html'),
-            (err, content)=>
-            {
-                if(err) throw err
-                res.end(content)
-            }
-        )
-    }
-*/
